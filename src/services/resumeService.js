@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API =
-  "http://localhost:5000/api/resumes";
+  "https://jobgine-backend.onrender.com/api/resumes";
 
 export const uploadResume = (
   formData,

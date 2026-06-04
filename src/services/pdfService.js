@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API =
-  "http://localhost:5000/api/pdf";
+  "https://jobgine-backend.onrender.com/api/pdf";
 
 export const downloadResumePdf =
   async (

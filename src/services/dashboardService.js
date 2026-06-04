@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API =
-  "http://localhost:5000/api/dashboard";
+  "https://jobgine-backend.onrender.com/api/dashboard";
 
 export const getStats = (
   token
