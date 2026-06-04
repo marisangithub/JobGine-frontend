@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { registerUser } from "../services/authService";
+import LOGO from "/favicon.png";
 
 const Register = () => {
 
@@ -94,11 +95,19 @@ navigate(
 
           <div className="text-center mb-4">
 
-            <h1
-              className="fw-bold"
-            >
-              ResumeIQ
-            </h1>
+              <div
+                         className="d-flex justify-content-center"
+                       >
+                                  <h1
+                         className="fw-bold"
+                         style={{
+                           color: "#ffffff"
+                         }}
+                       >
+                         JobGine
+                       </h1>
+           <img src={LOGO} height="50" width="50" />
+           </div>
 
             <p
               style={{

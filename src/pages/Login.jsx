@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { loginUser } from "../services/authService";
 import { AuthContext } from "../context/AuthContext";
+import LOGO from "/favicon.png"; 
 
 const Login = () => {
 
@@ -94,14 +95,19 @@ const Login = () => {
 
           <div className="text-center mb-4">
 
-            <h1
+   <div
+              className="d-flex justify-content-center"
+            >
+                       <h1
               className="fw-bold"
               style={{
                 color: "#ffffff"
               }}
             >
-              ResumeIQ
+              JobGine
             </h1>
+<img src={LOGO} height="50" width="50" />
+</div>
 
             <p
               style={{
