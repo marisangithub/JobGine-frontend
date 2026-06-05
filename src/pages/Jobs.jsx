@@ -250,7 +250,7 @@ const Jobs = () => {
                     {
                         !loading &&
                         jobs.length === 0 && (
-                            <p className="text-muted mt-3">
+                            <p className="text-white mt-3">
                                 Select a resume and click Find Jobs.
                             </p>
                         )
@@ -272,7 +272,7 @@ const Jobs = () => {
 
                         <div className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2 mb-3">
 
-                            <h3 className="mb-0 text-black">
+                            <h3 className="mb-0 text-white">
                                 🎯 Recommended Jobs
                             </h3>
 
