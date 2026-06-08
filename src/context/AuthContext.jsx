@@ -9,15 +9,32 @@ export const AuthProvider = ({ children }) => {
   );
 
   const login = (userData, token) => {
-    localStorage.setItem("user", JSON.stringify(userData));
-    localStorage.setItem("token", token);
+
+    console.log(
+      "LOGIN RECEIVED:",
+      userData
+    );
+
+    localStorage.setItem(
+      "user",
+      JSON.stringify(userData)
+    );
+
+    localStorage.setItem(
+      "token",
+      token
+    );
 
     setUser(userData);
+
   };
 
   const logout = () => {
+
     localStorage.clear();
+
     setUser(null);
+
   };
 
   return (

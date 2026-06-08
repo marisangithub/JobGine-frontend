@@ -11,6 +11,10 @@ const Sidebar = ({
     navigate("/");
   };
 
+  const user = JSON.parse(
+  localStorage.getItem("user")
+);
+
   return (
 
     <div
@@ -39,6 +43,20 @@ const Sidebar = ({
 </div>
 
       <ul className="nav flex-column">
+        {
+  user?.role === "admin" && (
+
+    <li className="nav-item mb-3">
+      <Link
+        className="nav-link text-white"
+        to="/admin"
+      >
+        👑 Admin Panel
+      </Link>
+    </li>
+
+  )
+}
 
         <li className="nav-item mb-2">
           <Link

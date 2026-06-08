@@ -15,6 +15,9 @@ import ResumeBuilder from "./pages/ResumeBuilder";
 import ResumeHistory from "./pages/ResumeHistory";
 import Jobs from "./pages/Jobs";
 import VerifyOTP from "./pages/VerifyOTP";
+import AdminDashboard from "./pages/AdminDashboard";
+import PrivateRoute from "./components/PrivateRoute";
+import AdminRoute from "./components/AdminRoute";
 
 function App() {
   return (
@@ -95,6 +98,18 @@ function App() {
     </ProtectedRoute>
   }
 />
+
+<Route
+  path="/admin"
+  element={
+    <PrivateRoute>
+      <AdminRoute>
+        <AdminDashboard />
+      </AdminRoute>
+    </PrivateRoute>
+  }
+/>
+
       </Routes>
 
     </BrowserRouter>
